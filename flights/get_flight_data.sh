@@ -3,9 +3,8 @@
 # This script will remotely invoke the bureau of transportation statistics web form to retrieve data by month:
 # https://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=236&DB_Short_Name=On-Time
 # for the specific columns listed in the SQL and utilized by the sample schema.
-
 mkdir -p data
-for y in {2018..2018}; do
+for y in {1990..2019}; do
   for m in {1..12}; do
     yyyymm="$y-$(printf %02d $m)"
     echo "$yyyymm"
