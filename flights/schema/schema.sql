@@ -1,8 +1,8 @@
-drop database if exists flights;
+/*drop database if exists flights;
 
-create database flights;
+create database flights;*/
 
-use flights;
+use columnstore_schema;
 
 create table airlines (
 iata_code char(2),
